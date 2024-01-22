@@ -8,6 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="left-content">
+                <img src="/icons/location_white.svg" alt="">
+                <p class="place"></p>
+                <span>,</span>
+                <p class="country"></p>
+            </div>
+            <div class="right-content">
+                <p class="weekday"></p>
+                <span>-</span>
+                <p class="date"></p>
+                <p class="month"></p>
+            </div>
+            
+        </header>
+        <br>
+        <hr>
+        <br>
+        <main>
+            <p class="temp-field"></p>
+            <p class="feels-like"></p>
+            <br>
+            <div class="desc-temp">
+                <p class="desc"></p>
+                <p class="minmax-temp"></p>
+            </div> <br>
+            <div class="wind-humidity">
+                <p class="wind"></p>
+                <p class="humidity"></p>
+            </div>
+            <br>
+            <div class="search">
+                <input type="text" name="location" id="searchbox" class="searchbox" placeholder="Enter city">
+                <button type="button" class="search-btn" id="search-btn">Search</button>
+            </div>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
