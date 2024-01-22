@@ -30,12 +30,11 @@ async function filterWeatherData() {
     } catch (error) {
         console.error(error.message);
     }
-    // console.log(`${weatherData.clouds.all}% cloudy`);
 }
 
 async function displayHandler(){
     const valueObject = await filterWeatherData();
-    console.log(valueObject);
+    
     const placeField = document.querySelector('.place');
     const countryField = document.querySelector('.country');
     placeField.textContent = valueObject.name;
